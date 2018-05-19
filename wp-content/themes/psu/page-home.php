@@ -18,21 +18,21 @@ get_header(); ?>
 
 				  	<!-- Slides custom setup -->
 					<div class="carousel-inner">
-					    <div class="item active" style="background-image:url('<?php echo the_field('slider_image_1');?>">
+					    <div class="item active" style="background-image:url('<?php echo get_template_directory_uri() ?>/library/images/home.jpg');">
 					    	<div class="tagline-container">
-					    		<h1><?php echo the_field('slider_tagline_1'); ?></h1>
+					    		<h1>As-is properties</h1>
 					    	</div><!-- .tagline-container -->
 					    </div><!-- .item -->
 
-					    <div class="item" style="background-image:url('<?php echo the_field('slider_image_2');?>');">
+					    <div class="item" style="background-image:url('<?php echo get_template_directory_uri() ?>/library/images/home1.jpg');">
 					    	<div class="tagline-container">
-					    		<h1><?php echo the_field('slider_tagline_2'); ?></h1>
+					    		<h1>All cash deals</h1>
 					    	</div><!-- .tagline-container -->
 					    </div><!-- .item -->
 
-					    <div class="item" style="background-image:url('<?php echo the_field('slider_image_3');?>');">
+					    <div class="item" style="background-image:url('<?php echo get_template_directory_uri() ?>/library/images/home2.jpg');">
 					    	<div class="tagline-container">
-					    		<h1><?php echo the_field('slider_tagline_3'); ?></h1>
+					    		<h1>Close quickly</h1>
 					    	</div><!-- .tagline-container -->
 					    </div><!-- .item -->
 					</div>
@@ -51,18 +51,53 @@ get_header(); ?>
 				<div class="page-content home">
 					<div class="container section">
 						<h1>The key to making your property challenges easier.</h1>
-						<?php $heading = get_field('header_paragraph');
-						if (!empty($heading)){ ?>
-							<p class="big"><?php echo $heading; ?></p>
-						<?php } ?>
+						<p class="big">We aim to... Lorem ipsum dolor sit amet, an sumo case erant usu, amet harum mundi ut qui, id exerci facilis vivendum nam. Pro eu illud audiam liberavisse.</p>
 						<hr>
-						<img class="hidden-xs" src="<?php echo get_template_directory_uri(); ?>/library/images/flowchart.png" alt="flowchart" style="max-width: 100%;width: 600px;margin: 0 auto;display: block;"/>
+						<div class="col-lg-4 col-md-4 hidden-xs col-sm-4">
+							<i class="ss-dollarsign ss-symbolicons-block"></i>
+							<h2>We Buy</h2>
+							<p>Lorem ipsum dolor sit amet, an sumo case erant usu, amet harum mundi ut qui, id exerci facilis vivendum nam. Pro eu illud audiam liberavisse.</p>
+							<div class="centeralign"><a class="btn" id="buy" href="<?php echo get_site_url(); ?>/sell-my-house">LEARN MORE</a></div>
+						</div>
+						<div class="col-lg-4 col-md-4 hidden-xs col-sm-4">
+							<i class="ss-key ss-glyphish-filled"></i>
+							<h2>We Rent</h2>
+							<p>Lorem ipsum dolor sit amet, an sumo case erant usu, amet harum mundi ut qui, id exerci facilis vivendum nam. Pro eu illud audiam liberavisse.</p>
+							<div class="centeralign"><a class="btn" id="rent" href="<?php echo get_site_url(); ?>/contact">LEARN MORE</a></div>
+						</div>
+						<div class="col-lg-4 col-md-4 hidden-xs col-sm-4">
+							<i class="ss-home ss-glyphish-filled"></i>
+							<h2>We Sell</h2>
+							<p>Lorem ipsum dolor sit amet, an sumo case erant usu, amet harum mundi ut qui, id exerci facilis vivendum nam. Pro eu illud audiam liberavisse.</p>
+							<div class="centeralign"><a class="btn" id="sell" href="<?php echo get_site_url(); ?>/big-deals">LEARN MORE</a></div>
+						</div>
 					</div><!-- container -->
 				</div><!-- .page-content -->
 			</div><!-- .row -->
 			<div class="page-content home hidden-sm hidden-md hidden-lg">
 				<div class="row">
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/flowchart2.png" alt="flowchart" style="max-width:100%;margin: auto;width: 150px;display: block;margin-bottom:50px;"/>
+					<div class="col-xs-12 layer">
+						<i class="ss-dollarsign ss-symbolicons-block"></i>
+						<h2>We Buy</h2>
+						<p>Lorem ipsum dolor sit amet, an sumo case erant usu, amet harum mundi ut qui, id exerci facilis vivendum nam. Pro eu illud audiam liberavisse.</p>
+						<div class="centeralign"><a class="btn" href="<?php echo get_site_url(); ?>/sell-my-house">LEARN MORE</a></div>
+					</div><!-- .col-xs-12 -->
+				</div><!-- .row -->
+				<div class="row center">
+					<div class="col-xs-12 layer">
+						<i class="ss-key ss-glyphish-filled"></i>
+						<h2>We Rent</h2>
+						<p>Lorem ipsum dolor sit amet, an sumo case erant usu, amet harum mundi ut qui, id exerci facilis vivendum nam. Pro eu illud audiam liberavisse.</p>
+						<div class="centeralign"><a class="btn" href="<?php echo get_site_url(); ?>/contact">LEARN MORE</a></div>
+					</div><!-- .col-xs-12 -->
+				</div><!-- .row -->
+				<div class="row">
+					<div class="col-xs-12 layer">
+						<i class="ss-home ss-glyphish-filled"></i>
+						<h2>We Sell</h2>
+						<p>Lorem ipsum dolor sit amet, an sumo case erant usu, amet harum mundi ut qui, id exerci facilis vivendum nam. Pro eu illud audiam liberavisse.</p>
+						<div class="centeralign"><a class="btn" href="<?php echo get_site_url(); ?>/big-deals">LEARN MORE</a></div>
+					</div><!-- col-xs-12 -->
 				</div><!-- .row -->
 			</div><!-- .page-content -->
 		</main><!-- #main -->

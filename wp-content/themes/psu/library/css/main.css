@@ -10,21 +10,18 @@ FONT FACE
   src: url("../fonts/ss-glyphish-filled.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-glyphish-filled.woff") format("woff"), url("../fonts/ss-glyphish-filled.ttf") format("truetype"), url("../fonts/ss-glyphish-filled.svg#SSGlyphishFilled") format("svg");
   font-weight: bold;
   font-style: normal; }
-
 @font-face {
   font-family: "SSSocialRegular";
   src: url("../fonts/ss-social-regular.eot");
   src: url("../fonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-social-regular.woff") format("woff"), url("../fonts/ss-social-regular.ttf") format("truetype"), url("../fonts/ss-social-regular.svg#SSSocialRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: "SSSymbolicons";
   src: url("../fonts/ss-symbolicons-block.eot");
   src: url("../fonts/ss-symbolicons-block.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-symbolicons-block.woff") format("woff"), url("../fonts/ss-symbolicons-block.ttf") format("truetype"), url("../fonts/ss-symbolicons-block.svg#SSSymboliconsBlock") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -61,6 +58,13 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
+.section{
+  padding:0 !important;
+}
+
+.page-id-6 .section{
+  padding:0 25px !important;
+}
 html, body {
   overflow-x: hidden;
   -webkit-transition: all 0.2s ease-in-out;
@@ -187,7 +191,6 @@ article {
       margin-left: 25px; }
     .entry-content img.aligncenter {
       float: none; } }
-
 .section {
   margin: 50px auto;
   padding: 0 25px; }
@@ -267,7 +270,7 @@ nav i {
   left: -250px;
   background-color: #EAEAEA;
   overflow-x: hidden;
-  padding: 160px 0 0 15px;
+  padding: 125px 0 0 15px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   #mobile-menu ul {
@@ -328,25 +331,20 @@ nav i {
   text-align: center;
   max-width: 900px;
   margin: auto; }
-
 .page-content.home .section {
   margin: 50px auto 0; }
-
 .page-content.home .layer {
   padding: 35px; }
   .page-content.home .layer p {
     max-width: 500px; }
-
 .page-content.home i {
   font-size: 5em;
   display: block;
   color: #009933;
   text-align: center;
   padding-bottom: 5px; }
-
 .page-content.home hr {
   margin: 50px auto 25px; }
-
 .page-content.home .center {
   background-color: #009933; }
   .page-content.home .center i, .page-content.home .center p {
@@ -403,19 +401,9 @@ nav i {
   border-width: 5px; }
 
 /* Forms */
-.contact-form-contain {
-  margin: 0 !important;
-  padding: 0 !important; }
-  .contact-form-contain .contact-form {
-    margin: 0 !important; }
-
-.sell-form .gform_wrapper {
-  width: 100%; }
-
 .sell-form.section {
   padding: 0;
-  margin: 50px 0;
-  margin-top: -50px; }
+  margin: 50px 0; }
 
 .section.space-bottom {
   margin-bottom: 0; }
@@ -521,7 +509,9 @@ input[type=text]:focus, textarea:focus, select:focus {
 h2.confirmation {
   font-size: 1.2em;
   padding: 25px; }
-
+.sell-form .gform_wrapper{
+  width:100% !important;
+}
 /***** Footer Styles *****/
 footer {
   background-color: #EAEAEA;
@@ -546,8 +536,7 @@ footer {
     font-size: 1em; }
   footer hr {
     margin: 20px auto;
-    width: 25%;
-    background-image: -webkit-linear-gradient(left, #ccc, #8c8b8b, #ccc); }
+    width: 25%;     background-image: -webkit-linear-gradient(left, #ccc, #8c8b8b, #ccc);}
 
 /* Temp */
 .entry-footer {
@@ -557,49 +546,55 @@ footer {
   /** Topbar Styles **/
   .topbar p {
     padding: 5px 0px 5px 25px; } }
-
 @media only screen and (min-width: 768px) {
   /*********************
-GENERAL STYLES
-*********************/
+  GENERAL STYLES
+  *********************/
   h1 {
     font-size: 2.5em; }
+
   h2 {
     margin-top: 0; }
+
   /***** Header Styles *****/
   .site-logo {
     height: 100px;
     width: 165px;
     float: left; }
+
   .short-head {
     font-weight: 600; }
+
   nav {
     padding: 0; }
+
   nav ul {
     height: 100px;
     padding: 0;
     margin: 0; }
+
   nav ul li {
     display: inline-block;
     font-size: 1.1em;
     padding: 0 15px;
     font-family: "Oswald", sans-serif; } }
-
 @media only screen and (min-width: 768px) and (min-width: 992px) {
   .site-logo {
     background-position: left center;
     background-size: 90%;
     width: 215px; }
+
   nav ul li {
     font-size: 1.4em;
     padding: 0 20px; }
+
   .page-content.home p {
     font-size: 1.3em; }
     .page-content.home p.big {
       font-size: 1.5em; }
+
   .contact-form {
     margin-top: 15px; } }
-
 @media only screen and (min-width: 768px) {
   nav ul a li {
     color: #009933;
@@ -610,14 +605,18 @@ GENERAL STYLES
       background-color: #009933;
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
+
   nav ul li.active {
     color: #fff;
     background-color: #009933; }
+
   /***** Carousel Styles *****/
   #homeCarousel .item {
     height: 450px; }
+
   .tagline-container h1 {
     font-size: 6em; }
+
   /***** Home Styles *****/
   .page-content.home i {
     -webkit-transition: all 0.2s ease-in-out;
@@ -629,35 +628,38 @@ GENERAL STYLES
   .page-content.home i {
     color: #ccc;
     padding-bottom: 15px; }
+
   /* Forms */
   .gform_wrapper {
     width: 75%;
     margin-left: auto !important;
     margin-right: auto !important; }
+
   .contact-form .gform_wrapper {
     width: 100%; }
+
   .gform_wrapper .top_label .gfield_error.col-sm-6 {
     width: 50%; } }
-
 @media only screen and (min-width: 1030px) {
   /*********************
-GENERAL STYLES
-*********************/
+  GENERAL STYLES
+  *********************/
   /***** Header Styles *****/ }
-
 @media only screen and (min-width: 1030px) and (min-width: 1200px) {
   .foogallery-default.alignment-center {
     text-align: left !important; }
+
   .site-logo {
     width: 250px; } }
-
 @media only screen and (min-width: 1240px) {
   /******************************************************************
- 
+   
+  
+  Stylesheet: Super Large Monitor Stylesheet
+  
+  You can add some advanced styles here if you like. This kicks in
+  on larger screens.
+  
+  ******************************************************************/ }
 
-Stylesheet: Super Large Monitor Stylesheet
-
-You can add some advanced styles here if you like. This kicks in
-on larger screens.
-
-******************************************************************/ }
+/*# sourceMappingURL=main.css.map */

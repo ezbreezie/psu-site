@@ -1,0 +1,136 @@
+/*********************
+GENERAL STYLES
+*********************/
+h1{
+	font-size:2.5em;
+}
+
+h2{
+	margin-top:0;
+}
+
+/***** Header Styles *****/
+
+.site-logo{
+	height: 100px;
+	width: 165px;
+	float:left;
+}
+
+.short-head{
+	font-weight:600;
+}
+
+nav{
+	padding:0;
+}
+
+nav ul{
+	height:100px;
+	padding:0;
+	margin:0;
+}
+
+nav ul li{
+	display: inline-block;
+	font-size: 1.1em;
+	padding:0 15px;
+	font-family:$headerf;
+}
+
+@media (min-width: 992px) {
+
+	.site-logo{
+		background-position: left center;
+		background-size: 90%;
+		width: 215px;
+	}
+
+	nav ul li{
+		font-size: 1.4em;
+		padding:0 20px;
+	}
+
+	.page-content.home {
+		p {
+			font-size:1.3em;
+
+		    &.big{
+		      font-size:1.5em;
+		    }
+		}
+	}
+
+	.contact-form {
+	    margin-top: 15px;
+	}
+}
+
+nav ul a li{
+	color: $green;
+	height:100px;
+	line-height:100px;
+	&:hover{
+		color:$white;
+		background-color: $green;
+		@include transition(all 0.2s ease-in-out);
+	}
+}
+
+nav ul li.active{
+	color:$white;
+	background-color: $green;
+}
+
+
+/***** Carousel Styles *****/
+
+#homeCarousel {
+  .item{
+    height:450px;
+  }
+}
+
+.tagline-container{
+  h1 {
+    font-size: 6em;
+  }
+}
+
+/***** Home Styles *****/
+
+
+.page-content.home {
+
+	i{
+		@include transition(all 0.2s ease-in-out);
+	}
+	.section{
+		margin:50px auto;
+	}
+
+	hr{
+	    margin:50px auto;
+	}
+
+	i{
+		color:#ccc;
+		padding-bottom: 15px;
+	}
+}
+
+/* Forms */
+
+.gform_wrapper{
+	width:75%;
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+
+.contact-form .gform_wrapper{
+	width:100%;
+}
+
+.gform_wrapper .top_label .gfield_error.col-sm-6 {
+	width: 50%; 
+}

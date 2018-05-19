@@ -1,0 +1,42 @@
+// Sass variables
+@import "components/variables";
+
+// typography
+@import "components/typography";
+
+// Sass functions
+@import "components/functions";
+
+// import mixins
+@import "components/mixins";
+
+// styles in base.scss
+@import "breakpoints/base";
+
+@media only screen and (min-width: 481px) {
+
+	// styles in 481up.scss
+	@import "breakpoints/481up";
+
+} // end of media query
+
+@media only screen and (min-width: 768px) {
+
+	// styles in 768up.scss
+	@import "breakpoints/768up";
+
+} // end of media query
+
+@media only screen and (min-width: 1030px) {
+
+	// styles in 1030up.scss
+	@import "breakpoints/1030up";
+
+} // end of media query
+
+@media only screen and (min-width: 1240px) {
+
+	// styles in 1240up.scss
+	@import "breakpoints/1240up";
+
+} // end of media query
